@@ -401,14 +401,6 @@ footer a {
 
 @media only screen and (max-width: 768px) {
     
-    .long {
-        display: none;
-    }
-    
-    .short {
-        display: inherit;
-    }
-    
     .stickyPush {
         padding-top: 150px; /** Header Height + Header Padding **/
     }
@@ -430,6 +422,30 @@ footer a {
     .rounded-box-right {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 405px) {
+ 
+    .long {
+        display: none;
+    }
+    
+    .short {
+        display: inherit;
+    }
+    
+}
+
+@media only screen and (max-width: 265px) {
+ 
+    #logo {
+        margin-right: 0;
+    }
+    
+    #brand-name {
+        display: none;
     }
     
 }
