@@ -1,0 +1,15 @@
+{
+  "name": "Discovery High School TSA",
+  "short_name": "Discovery TSA",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#005dab",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png", "sizes": "180x180"
+    }
+  ]
+}
