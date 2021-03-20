@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Discovery TSA</title>
+        <meta name="description" content="Discovery High School's Technology Student Association chapter provides students with a hands-on approach to engineering &amp; technology education with events, competitions, and demonstrations." />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
+
+        <!-- Favicons -->
+        <link rel='icon' href="./assets/img/logo.png" type="image/png" />
+        
+        <!-- Style -->
+        <link rel="preload" as="style" href="./assets/css/style.min.css" onload="this.rel='stylesheet'" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" integrity="sha512-jQqzj2vHVxA/yCojT8pVZjKGOe9UmoYvnOuM/2sQ110vxiajBU+4WkyRs1ODMmd4AfntwUEV4J+VfM6DkfjLRg==" crossorigin="anonymous" />  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css" integrity="sha512-IXuoq1aFd2wXs4NqGskwX2Vb+I8UJ+tGJEu/Dc0zwLNKeQ7CW3Sr6v0yU3z5OQWe3eScVIkER4J9L7byrgR/fA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- Information -->
+        <input type="hidden" id="page" value="home" />
+        <!-- Start Header -->
+        <header>
+            <nav id="stickyHeader">
+                <div class="wrapper">
+                    <div id="brand">
+                        <a href="./">
+                            <img src="assets/img/logo.png" alt="Discovery High School Logo" id="logo" title="Discovery High School Logo" />
+                        </a>
+                        <span id="brand-name">Discovery <span class="long">High School TSA</span><span class="short">TSA</span></span>
+                    </div>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.xhtml" class="nav-link" data-active="false" data-name="home">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="discover.html" class="nav-link" data-active="false" data-name="discover">discover</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="join.html" id="joinButton" class="nav-link" data-ignore="true">join now</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Start Main Content -->
+        <main id="mainContent">
+            <section id="welcome">
+                <div class="row row-no-padding" id="bigBackOne">
+                    <div class="content-center piece col-md wrapper topBuffer row-no-padding">
+                        <div class="wrapper">
+                            <h1 class="emphasis"><span>Welcome to Discovery's TSA</span></h1>
+                            <p>Our Technology Student Association (TSA) allows students to get into the action with annual competitive events at the chapter, state, and national levels.</p>
+                            <a href="join.html" class="button button-center space joinLink">Join Us Today</a>
+                        </div>
+                    </div>
+                    <div class="piece col-md row-no-padding">
+                        <img class="bigImage bigImage-right" alt="Discovery High School Front" src="./assets/img/front.jpeg" />
+                    </div>
+                </div>
+            </section>
+            <section id="events">
+                <div class="wrapper">
+                    <h2 class="emphasis">
+                        <span>Upcoming Events</span>
+                    </h2>
+                    <div class="row row-no-padding">
+                        <div class="col-md-4 bottomBuffer">
+                            <p class="headline-date">March 20, 2021</p>
+                            <p class="headline">Georgia State Leadership Conference</p>
+                        </div>
+                        <div class="col-md-4 bottomBuffer">
+                            <p class="headline-date">March 22, 2021</p>
+                            <p class="headline">Virtual SLC Submissions Due</p>
+                        </div>
+                        <div class="col-md-4 bottomBuffer">
+                            <p class="headline-date">June 23 - 27, 2021</p>
+                            <p class="headline">National TSA Conference</p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+            </section>
+            <section id="characteristics">
+                <div class="row row-no-padding center-content">
+                    <div class="col-md-6 feature-card blue rounded-box-right feature-card-padding">
+                        <div class="wrapper">
+                            <i class="fas fa-robot feature-circle blue rotatingIcon"></i>
+                            <h3 class="side-text side-left">Robotics Club</h3>
+                            <p>Join Robotics Club, a subsidiary of TSA and build programmable machines where your imagination is the limit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 content-center">
+                        <div class="wrapper">
+                            <p>Learn on the fly with robotics, whether you are interested in physics, programming, or simply engineering.</p>
+                            <br/>
+                            <a href="robotics.xhtml" target="_blank" class="button button-center space side-text">Learn More</a>
+                            <a href="http://rmd.at/dhstsabot" target="_blank" class="button button-center space side-text joinLink">Join Remind</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End Main Content -->
+        <!-- Start Footer -->
+        <footer>
+            <div class="wrapper">
+                <div class="row" id="footer-content">
+                    <div class="footer-block col-md" id="information">
+                        <h2>club information</h2>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="advisors.html">Advisors</a>
+                                </li>
+                                <li>
+                                    <a href="officers.html">Officers</a>
+                                </li>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="https://tsaweb.org/" target="_blank">National TSA</a>
+                                </li>
+                                <li>
+                                    <a href="https://gatsa.org/" target="_blank">Georgia TSA</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-block col-md" id="offerings">
+                        <h2>school information</h2>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="advisors.html">Course Offerings</a>
+                                </li>
+                                <li>
+                                    <a href="advisors.html">Extracurricular Activities</a>
+                                </li>
+                                <li>
+                                    <a href="advisors.html">Titan Pride</a>
+                                </li>
+                                <li>
+                                    <a href="advisors.html">Online Campus</a>
+                                </li>
+                                <li>
+                                    <a href="advisors.html">Resources</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-block col-md" id="connect">
+                        <div class="content">
+                            <a href="https://www.gcpsk12.org/DiscoveryHS" title="Discovery High School Website" target="_blank">
+                                <img src="./assets/img/logo-full.png" class="bottomBuffer" id="logoFull" alt="Discovery High School Logo" title="Discovery High School Logo" />
+                            </a>
+                            <div class="iconset">
+                                <a href="javascript:void(0)" id="zoom" title="Zoom">
+                                    <i class="fas fa-video"></i>
+                                </a>
+                                <a href="https://twitter.com/DiscoveryTitans" target="_blank" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/discoverygcps/" target="_blank" title="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/disco_tsa/" target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="noticeText">
+                    <span id="copyright">Copyright &#169; <span id="currentYear">2021</span> <a href="https://www.jaysonfong.org">Jayson Fong</a>. All Rights Reserved.</span>
+                    <span><a href="https://www.gcpsk12.org/DiscoveryHS">Discovery High School</a> is a unit of <a href="https://www.gcpsk12.org/">Gwinnett County Public Schools</a>. The Discovery High School logo is a trademark of <a href="https://www.gcpsk12.org/">Gwinnett County Public Schools</a>.</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js" integrity="sha512-JnjG+Wt53GspUQXQhc+c4j8SBERsgJAoHeehagKHlxQN+MtCCmFDghX9/AcbkkNRZptyZU4zC8utK59M5L45Iw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+        <script src="./assets/js/all.min.js"></script>
+    </body>
+</html>

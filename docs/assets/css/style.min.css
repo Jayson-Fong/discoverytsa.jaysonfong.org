@@ -1,0 +1,443 @@
+/*
+The MIT License
+
+Copyright 2021 Jayson Fong <contact@jaysonfong.org>.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+/* 
+    Created on : Mar 12, 2021, 10:52:22 AM
+    Author     : Jayson Fong <contact@jaysonfong.org>
+*/
+
+/*
+    TSA Colors:
+    Blue: rgb(0, 93, 171)
+    Red: rgb(238, 49, 36)
+*/
+
+/*
+    General
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font: normal 600 'Halant', serif;
+}
+
+.wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.piece {
+    margin-bottom: 30px;
+}
+
+.piece:last-of-type {
+    margin-bottom: 0px;
+}
+
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+br {
+    margin: 25px 0;
+    display: block;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+.short {
+    display: none;
+}
+
+/*
+    Brand Header
+*/
+#brand {
+    display: inline;
+    margin-right: 10px;
+}
+
+#logo, #brand-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+#logo {
+    margin-right: 10px;
+    height: 64px;
+}
+
+/*
+    Navigation
+*/
+nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(85, 85, 85);
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+.nav-item {
+    display: inline;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.nav-item:last-of-type {
+    border-right: none;
+}
+
+.nav-link {
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    color: rgb(85, 85, 85);
+}
+
+.nav-link[data-active='true'] {
+    text-decoration: underline;
+    
+}
+
+#joinButton {
+    font-weight: 900;
+    border: 1px solid rgba(0, 93, 171, 0.2);
+    border-radius: 45px;
+}
+
+#joinButton:hover {
+    background-color: rgba(0, 93, 171, 0.3);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/*
+    Main Content
+*/
+main {
+    padding: 15px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.stickyPush {
+    padding-top: 95px; /** Header Height + Header Padding **/
+}
+
+.topBuffer {
+    margin-top: 15px;
+}
+
+.bottomBuffer {
+    margin-bottom: 15px;
+}
+
+#bigBackOne {
+    /** maybe implement? **/
+}
+
+.bigImage {
+    width: 100%;
+    height: 100%;
+}
+
+.bigImage-right {
+    border-bottom-left-radius: 45px;
+}
+
+.emphasis {
+    text-decoration: underline;
+    color: rgb(0, 93, 171);
+    margin-bottom: 15px;
+}
+
+.emphasis span {
+    color: rgb(0, 0, 0);
+}
+
+p:first-of-type {
+    margin-top: 15px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.joinLink:hover:before {
+    content: "\01F389 ";
+}
+
+.rotatingIcon:hover {
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+.fa-robot:hover:before {
+    content: "\f013";
+}
+
+.button {
+    border: 1px solid rgb(0, 93, 171);
+    background-color: transparent;
+    padding: 15px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.button:hover {
+    background-color: rgba(32, 183, 232, 0.5);
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.space {
+    margin: 30px;
+}
+
+.button-center {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.content-center {
+    height: 50%;
+    margin-top: auto !important;
+    margin-bottom: auto;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.headline-date {
+    text-decoration: underline;
+}
+
+.headline {
+    font-weight: 800;
+}
+
+
+/*
+    Feature Text
+*/
+.feature-card {
+    padding: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.feature-card.blue {
+    background-color: rgba(32, 183, 232, 0.5);
+}
+
+.feature-card-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.feature-circle {
+    border-radius: 90px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.feature-circle.blue {
+    background-color: rgba(32, 128, 246, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.feature-text {
+    
+}
+
+.rounded-box-right {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.side-text {
+    display: inline;
+    font-size: 24px;
+}
+
+.side-text.side-left {
+    margin-left: 10px;
+}
+
+/*
+    Footer
+*/
+footer {
+    /*background-color: rgb(0, 93, 171);*/
+    padding: 30px 0;
+    margin-top: 15px;
+    /*color: rgb(255, 255, 255);*/
+}
+
+.footer-block {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 25px;
+}
+
+.footer-block:last-of-type {
+    border-right: none;
+}
+
+#footer-content {
+    padding-bottom: 15px;
+}
+
+footer .content {
+    margin-left: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+footer li a:hover {
+    background-color: rgba(0, 93, 171, 0.05);
+}
+
+footer a {
+    /*color: rgb(255, 255, 255);*/
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.footer-block h2 {
+    letter-spacing: 4px;
+    font: normal 600 16px/1.4 'Halant', serif;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#logoFull {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconset, .iconset i {
+    font-size: 36px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#noticeText, #noticeText a {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 796px) {
+    
+    #joinButton {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .long {
+        display: none;
+    }
+    
+    .short {
+        display: inherit;
+    }
+    
+    .stickyPush {
+        padding-top: 147px; /** Header Height + Header Padding **/
+    }
+    
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    #brand {
+        text-align: center;
+        display: block;
+    }
+    
+    .bigImage-right {
+        border-bottom-left-radius: 0;
+    }
+    
+    .rounded-box-right {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+}
+
+@media print {
+    
+    nav, footer {
+        display: none;
+    }
+    
+}
