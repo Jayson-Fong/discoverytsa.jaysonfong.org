@@ -164,7 +164,7 @@ main {
 }
 
 .stickyPush {
-    padding-top: 95px; /** Header Height + Header Padding **/
+    padding-top: 100px; /** Header Height + Header Padding **/
 }
 
 .topBuffer {
@@ -410,7 +410,7 @@ footer a {
     }
     
     .stickyPush {
-        padding-top: 147px; /** Header Height + Header Padding **/
+        padding-top: 150px; /** Header Height + Header Padding **/
     }
     
     nav ul {
