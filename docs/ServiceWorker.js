@@ -1,6 +1,6 @@
 /* global self, caches */
 
-const staticDevCoffee = "discovery-tsa-v1";
+const discoveryTSA = "discovery-tsa-v1";
 const assets = [
     /* Pages */
     "/",
@@ -20,7 +20,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
-        caches.open(staticDevCoffee).then(cache => {
+        caches.open(discoveryTSA).then(cache => {
             cache.addAll(assets);
         })
     );
